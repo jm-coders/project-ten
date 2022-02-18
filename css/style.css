@@ -1,0 +1,400 @@
+/* 
+================common css=======================
+ */
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.625em;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+a{
+    color: #6a3144;
+    display: inline-block;
+    -webkit-transition: all 00.5s;
+    transition: all 00.5s;
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    max-width: 96%;
+    margin: 0 auto;
+}
+
+/*======================== Top Header area ================================*/
+.top_header_area{
+    background: #a88c95;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.top_header_area .inner_header{
+    display: grid;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+}
+.social_area ul li{
+    display: inline-block;
+    margin-left: 7px;
+}
+.social_area ul li a{
+   display: block;
+   text-align: center;
+   
+}
+.social_area ul li a i{
+    -webkit-transition: 00.5s;
+    transition: 00.5s;
+    background: #d2d2d2;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+    padding-top: 10px;
+}
+.social_area ul li a .fa-facebook-f:hover{
+   color: #fff;
+   background:#0046F0;
+}
+.social_area ul li a i.fa-linkedin-in:hover{
+    background: #0077B5;
+    color: #fff;
+}
+.social_area ul li a i.fa-twitter:hover{
+    background: #5DA9DD;
+    color: #fff;
+}
+.social_area ul li a i.fa-pinterest:hover{
+    background: #B7081B;
+    color: #fff;
+}
+.social_area ul li a i.fa-rss:hover{
+    background: #ee802f;
+    color: #fff;
+}
+.mobile_menu{
+    display: none;
+}
+.mobile_menu .overly{
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 99999999;
+    overflow: hidden;
+    -webkit-transition: all 00.5s;
+    transition: all 00.5s;
+    background: rgba(0, 0, 0, 0.8);
+}
+.sticky{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ca537b;
+}
+.mobile_menu .overly .close_btn {
+    float: right;
+    font-size: 60px;
+    margin-top: 23px;
+    margin-right: 20px;
+}
+.overly_content{
+    clear: both;
+    position: relative;
+    top: 5%;
+}
+.overly_content a{
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.mobile_menu span {
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 8px;
+}
+.search_area form{
+    border-radius: 5px;
+}
+.search_area input{
+    padding: 10px;
+    border: 0;
+    outline: none;
+    float: left;
+    font-size: 14px;
+}
+.search_area input[type="text"]{
+    background: #fff;
+    border-radius: 5px 0 0 5px;
+}
+.search_area input[type="submit"]{
+    background: #97455f;
+    color: #fff;
+    cursor: pointer;
+    border-radius:0 5px 5px 0;
+    -webkit-transition: all 00.5s;
+    transition: all 00.5s;
+}
+.search_area input[type="submit"]:hover{
+    background: #97455f;
+    color: #fff;
+    cursor: pointer;
+    border-radius:0 5px 5px 0;
+}
+/*
+=====================logo area ===================
+*/
+.logo_area{
+    width: 220px;
+    max-width: 100%;
+    margin: 25px auto;
+}
+.logo_area a{
+    display: block;
+}
+/*\\\\\\\\\\\\========================= Navition area =================////////////*/
+.main_manu{
+    background: #97455f;
+    text-align: center;
+    z-index: 999;
+    position: sticky !important;
+    top: 0;
+}
+.main_manu li{
+    display: inline-block;
+}
+.main_manu li a{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    padding:15px 12px ;
+    -webkit-transition: all 00.5s;
+    transition: all 00.5s;
+}
+.active{
+    background: #6a3144;
+}
+.main_manu li a:hover{
+    background: #6a3144;
+}
+/*====================== slider area =========================*/
+.bx-wrapper .bx-pager.bx-default-pager a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    border: 3px solid cadetblue;
+    background: none;
+}
+.bx-wrapper {
+    margin-bottom: 0px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: rgba(151, 69, 95, 0.904);
+}
+/*
+======================== About area =========================
+*/
+#about_area{
+    padding: 60px 0 45px;
+}
+.inner_about{
+    display: grid;
+    grid-template-columns: 45% 51%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+.about_text h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 35px;
+}
+.about_text p{
+    line-height: normal;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 35px;
+}
+.about_text a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 40px 10px 20px;
+    background: #6a3144;
+}
+/*
+ ============================Service area===============================
+ */
+ #service_area{
+     background: #f5f5f5;
+     padding: 50px 0 75px;
+     text-align: center;
+ }
+ #service_area h2{
+    color: #6a3144;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+ }
+ #service_area .sub_title{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 18px;
+ }
+ .inner_service{
+     text-align: left;
+     margin-top: 75px;
+     display: grid;
+     -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     grid-template-columns: 32% 32% 32%;
+ }
+ .inner_service .child_service{
+     -webkit-transition: all 00.5s;
+     transition: all 00.5s;
+     padding:80px 80px;
+     padding-right: 70PX;
+ }
+ .inner_service .child_service:hover{
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+     background: #fff;
+     -webkit-box-shadow: 0 0 10px 5px #ddd;
+     box-shadow: 0 0 10px 5px #ddd;
+ }
+ .child_service h3{
+     margin: 0px;
+     margin-left: -55px;
+     font-size: 100px;
+     color: #e4e2e0;
+     z-index: 1;
+ }
+ .child_service h4{
+     color: #523827;
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+ }
+ .child_service p{
+     margin: 0;
+    font-size: 14px;
+ }
+ /*
+ ============================ Contuct area============================
+  */
+  #contuct_area{
+      padding: 70px 0;
+      background: url(../img/contuct_bg.png) center;
+  }
+  #contuct_area h2{
+      color: #fff;
+      font-size: 36px;
+      font-weight: 400;
+      text-align: center;
+      margin: 0;
+  }
+  #contuct_area form{
+      width: 80%;
+      margin: auto;
+      margin-top: 45px;
+      display: grid ;
+      grid-column-gap: 10px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      grid-template-columns:50% 50%;
+  }
+  #contuct_area form input{
+      outline: none;
+      padding: 10px;
+      border-radius: 5px ;
+      margin-bottom: 10px;
+  }
+  #contuct_area form input[type="submit"]{
+      grid-column: 1/-1;
+      display: block;
+      width: 250px;
+      margin:20px auto 0;
+      background: #97455f;
+      border: 0;
+      font-size: 21px;
+      padding: 15px;
+      cursor: pointer;
+      border-radius: 30px;
+      text-transform: uppercase;
+      color: #fff;
+  }
+  #contuct_area form textarea{
+      grid-column: 1/-1;
+      min-height: 120px;
+      resize: vertical;
+      padding: 15px 10px 10px 20px;
+  }
+  /*========================= Footer area================================== */
+  footer{
+      padding: 50px 0 60px;
+  }
+  footer img{
+      width: auto;
+      margin: auto;
+  }
+
+  footer p{
+      text-align: center;
+      font-size: 14px;
+      margin: 0;
+  }
+  /*Main stylesheet for Backtop jQuery Plugin */
+#backTop{
+    width:35px;
+    height:35px;
+    padding:10px;
+    border-radius:4px;
+    text-indent:-9999px;
+    cursor:pointer;
+    z-index:999999999;
+	display:none;
+	box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+}
+#backTop.green{
+     background:url(../img/uparr-48-b.png) no-repeat center center rgba(81,217,187,0.9); 
+    border:1px solid #fff;
+}

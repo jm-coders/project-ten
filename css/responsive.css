@@ -1,0 +1,246 @@
+@media screen and (min-width:1500px) {
+    #slider_area {
+        max-width: 1500PX;
+        margin: auto
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .inner_service .child_service {
+        padding: 70px 65px;
+        padding-right: 50PX
+    }
+
+    .child_service h4 {
+        font-size: 18px;
+        margin-bottom: 25px
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .mobile_menu {
+        display: block
+    }
+
+    .top_header_area .inner_header {
+        grid-template-columns: auto auto auto
+    }
+
+    .about_text h1,
+    .about_text p {
+        margin-bottom: 30px
+    }
+
+    .child_service h4 {
+        font-size: 16px;
+        margin-bottom: 25px
+    }
+
+    .main_manu nav {
+        display: none
+    }
+    .sticky_top{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #ca537b;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .inner_service .child_service {
+        padding: 65px 50px
+    }
+
+    .child_service h3 {
+        font-size: 85px
+    }
+}
+
+@media screen and (max-width:920px) {
+    .inner_about {
+        display: block
+    }
+
+    .inner_service .child_service {
+        padding: 65px 50px;
+        padding-left: 75px
+    }
+
+    .about_image {
+        margin-top: 35px
+    }
+
+    .inner_service {
+        grid-template-columns: 49% 49%
+    }
+
+    .child_service h3 {
+        font-size: 100px
+    }
+
+    .child_service h4 {
+        font-size: 20px
+    }
+
+    footer img {
+        width: 30%
+    }
+}
+
+@media screen and (max-width:680px) {
+    .child_service h4 {
+        font-size: 16px
+    }
+
+    #contuct_area form {
+        width: 100%;
+        grid-template-columns: 49% 50%
+    }
+
+    #contuct_area form {
+        grid-column-gap: 0px
+    }
+
+    .inner_service .child_service {
+        padding-left: 50px
+    }
+
+    .child_service h3 {
+        margin-left: -43px;
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .inner_service {
+        display: block
+    }
+
+    .search_area input {
+        display: none
+    }
+
+    .inner_service .child_service {
+        width: 90%;
+        margin: auto
+    }
+
+    .inner_service .child_service {
+        padding-left: 85px
+    }
+
+    .logo_area {
+        margin: 10px auto
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        width: 20px;
+        height: 20px
+    }
+}
+
+@media screen and (max-width:520px) {
+    #contuct_area form {
+        display: block
+    }
+
+    #contuct_area form input,
+    textarea {
+        width: 100%
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        width: 15px;
+        height: 15px
+    }
+
+    #about_area {
+        padding: 45px 0 30px
+    }
+
+    #service_area {
+        padding: 45px 0 50px
+    }
+
+    .inner_service .child_service {
+        padding: 50px 50px;
+        padding-left: 60px
+    }
+
+    #contuct_area {
+        padding: 35px 0
+    }
+
+    footer {
+        padding: 35px 0 40px
+    }
+}
+
+@media screen and (max-width:420px) {
+    #service_area h2 {
+        font-size: 38px
+    }
+
+    #service_area .sub_title {
+        font-size: 16px
+    }
+
+    .inner_service .child_service {
+        width: 100%;
+        padding: 40px 30px 40px 60px
+    }
+
+    .child_service h3 {
+        font-size: 75px
+    }
+
+    #contuct_area form input[type=submit] {
+        width: 200px;
+        font-size: 16px
+    }
+
+    .about_text h1,
+    .about_text p {
+        margin-bottom: 20px
+    }
+
+    .logo_area a {
+        width: 80%;
+        margin: auto
+    }
+}
+
+@media screen and (max-width:320px) {
+    .child_service h3 {
+        text-align: center
+    }
+
+    .inner_service .child_service {
+        width: 90%;
+        padding: 30px 10px
+    }
+
+    .child_service h4 {
+        padding-left: 0;
+        margin-bottom: 30px
+    }
+
+    .social_area ul li a i {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        padding-top: 8px
+    }
+
+    .mobile_menu span {
+        font-size: 35px;
+        margin-top: 0
+    }
+
+    .bx-wrapper .bx-controls-auto,
+    .bx-wrapper .bx-pager {
+        bottom: 8px
+    }
+}
